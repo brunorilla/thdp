@@ -8,10 +8,14 @@ public class EjercicioSiete {
 		
 		input = new Scanner(System.in);
 		
+		
 		System.out.println("Ingrese 3 números enteros");
 		
+		
 		int num1 = input.nextInt();
+		
 		int num2 = input.nextInt();
+		
 		int num3 = input.nextInt();
 		
 		if (num1 > num2 && num1 > num3) {

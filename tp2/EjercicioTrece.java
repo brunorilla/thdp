@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class EjercicioTrece {
 	// Valor de las horas-trabajo
 	final static int STD_HOUR = 16;
-	final static int EXT_HOUR =  STD_HOUR + 20;
+	final static int EXT_HOUR =  20;
 	
 	private static Scanner input;
 	public static void main(String[] args) throws InterruptedException {
