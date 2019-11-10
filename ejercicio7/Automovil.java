@@ -65,9 +65,9 @@ public class Automovil {
 		double resto = getCapacidadTotalCombustible() - getCantidadCombustible();
 		if ((litros < getCapacidadTotalCombustible() && litros < resto) || (litros == getCapacidadTotalCombustible() && litros == resto)) {
 			answer = true;
-		} else if ( litros > getCapacidadTotalCombustible()) {
-			System.out.println("Usted quiere cargar " +  litros + "l. pero sólo hay espacio para cargar " + resto +
-					"\n ¿Desea cargar solamente " + resto + "l ?");
+		} else if ( litros > getCapacidadTotalCombustible() && resto > 0) {
+			System.out.println("Usted quiere cargar " +  litros + "L. pero sólo hay espacio para cargar " + resto + "L" +
+					"\n ¿Desea cargar solamente " + resto + "L ? \n S/N?");
 			rta = validarChar();
 			if (rta == 'S') {
 				answer = true;
@@ -83,12 +83,14 @@ public class Automovil {
 		boolean respuesta = this.verificarCantidadCombustible(litros);
 		if (respuesta) {
 			double resto = getCapacidadTotalCombustible() - getCantidadCombustible();
+			
 			if (litros <= resto) {
-				setCantidadCombustible(litros);
+				System.out.println("Cargando " + litros + "L");
+				setCantidadCombustible(litros + getCantidadCombustible());
 				
 			} else if (litros > resto) {
 				mostrar("Sólo hay espacio para cargar " + resto + ". Se cargará esa cantidad.");
-				setCantidadCombustible(resto);
+				setCantidadCombustible(resto + getCantidadCombustible());
 			}
 			answer = true;
 		}

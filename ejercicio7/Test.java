@@ -11,9 +11,16 @@ public class Test {
 		
 		bmw.viajar(200);
 		System.out.println(bmw.toString());
-		bmw.viajar(2000);
-		System.out.println(bmw.toString());
+		bmw.cargarCombustible(11);
 		
+		System.out.println(bmw.toString());
+		bmw.cargarCombustible(13);
+
+		System.out.println(bmw.toString());
+		bmw.viajar(23);
+		System.out.println(bmw.toString());
+		bmw.cargarCombustible(40);
+		System.out.println(bmw.toString());
 	}
 
 }
