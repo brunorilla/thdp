@@ -7,7 +7,10 @@ public class Main {
 		Juegos olim = new Juegos("Cabeza", 2020);
 		Carrera car = new Carrera(Disciplina.C_100);
 		Atleta atl = new Atleta("Braulio", 345939393);
+		atl.setDisc(Disciplina.C_100);
+		System.out.println(atl.getDisc());
 		
+		olim.anotarAtletaEnCarrera(atl, atl.getDisc());
 
 	}
 
