@@ -6,10 +6,12 @@ public class Main {
 		// TODO Auto-generated method stub
 		Juegos olim = new Juegos("Cabeza", 2020);
 		Carrera car = new Carrera(Disciplina.C_100);
+		olim.agregarNuevaCarrera(car);
 		Atleta atl = new Atleta("Braulio", 345939393);
 		atl.setDisc(Disciplina.C_100);
 		System.out.println(atl.getDisc());
 		
+		olim.anotarAtletaEnCarrera(atl, atl.getDisc());
 		olim.anotarAtletaEnCarrera(atl, atl.getDisc());
 
 	}

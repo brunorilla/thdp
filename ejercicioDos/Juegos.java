@@ -27,11 +27,16 @@ public class Juegos {
 		// Buscamos la primer carrera disponible que haya en esa disciplina
 		Carrera disponible = primerCarreraDisponible(disc);
 		if(disponible != null) {
-			success = disponible.atletaEstaAnotado(atl);
+			success = !(disponible.atletaEstaAnotado(atl));
+			System.out.println("success es:" + success);
 		} else {
 			System.out.println("No hay carreras de esa disciplina disponibles por el momento");
 		}
-		if(success) { System.out.println("Anotado"); } { System.out.println("No se pudo anotar");}
+		if (success) {
+			System.out.println("Anotado");
+		} else {
+			System.out.println("No se pudo anotar");
+		}
 	}
 
 	public String getEdicion() {
@@ -81,6 +86,10 @@ public class Juegos {
 			}
 		}
 		return car;
+	}
+	
+	public void agregarNuevaCarrera(Carrera car) {
+		this.getL_carreras().add(car);
 	}
 
 	public int getCantidadAtletas() {
