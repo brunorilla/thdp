@@ -1,4 +1,4 @@
-package ejercicioUnoyDos;
+package tp3.ejercicioUnoyDos;
 
 public abstract class Empleado {
 	private String nombre;

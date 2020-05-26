@@ -1,4 +1,4 @@
-package ejercicioTres;
+package tp3.ejercicioTres;
 
 public abstract class Persona {
 	private String nombre;

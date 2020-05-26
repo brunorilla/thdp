@@ -1,4 +1,4 @@
-package ejercicioUnoyDos;
+package tp3.ejercicioUnoyDos;
 
 public class Asalariado extends Empleado {
 	float sueldo;

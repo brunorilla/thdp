@@ -1,4 +1,4 @@
-package ejercicioUnoyDos;
+package tp3.ejercicioUnoyDos;
 
 public class Subcontratado extends Empleado {
 	float cantHoras;

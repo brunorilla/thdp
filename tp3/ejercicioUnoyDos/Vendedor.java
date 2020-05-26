@@ -1,4 +1,4 @@
-package ejercicioUnoyDos;
+package tp3.ejercicioUnoyDos;
 
 public class Vendedor extends Subcontratado {
 	private float porcentaje;

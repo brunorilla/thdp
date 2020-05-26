@@ -1,4 +1,4 @@
-package ejercicioTres;
+package tp3.ejercicioTres;
 
 public class Cliente extends Persona {
 	private Carrito carrito;
