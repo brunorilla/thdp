@@ -70,7 +70,23 @@ public class Casa {
 
 	public void mostrarListaProd() {
 		for (int i = 0; i < this.l_prod.size(); i++) {
+			System.out.println("Producto número " + i);
+			System.out.println("Marca: ");
 			System.out.println(this.l_prod.get(i).getMarca());
+			System.out.println("Modelo: ");
+			System.out.println(this.l_prod.get(i).getModelo());
+			System.out.println("N ° Serie: ");
+			System.out.println(this.l_prod.get(i).getN_serie());
+			System.out.println("Estado: ");
+			if (this.l_prod.get(i).isEstado()) {
+				System.out.println("Encendido");
+			} else {
+				System.out.println("Apagado");
+			}
+			System.out.println("Precio: ");			
+			System.out.println(this.l_prod.get(i).getPrecio());
+			System.out.println("Voltaje: ");
+			System.out.println(this.l_prod.get(i).getVoltaje());
 		}
 	}
 
@@ -109,17 +125,24 @@ public class Casa {
 	public boolean validarBool() {
 		boolean hayError;
 		boolean value = false;
+		String aux = null;
 		do {
 			try {
-				value = Boolean.parseBoolean(input.nextLine());
-				System.out.println(value);
+				System.out.println("Ingrese 's' para Sí ó 'n' para No.");
+				aux = input.nextLine().toLowerCase();
 				hayError = false;
 			} catch (InputMismatchException ime) {
-				System.out.println(ime.getCause());
-				System.out.println("Error en la carga del dato. Ingrese TRUE ó FALSE");
+				System.out.println("Error en la carga del dato");
+				hayError = true;
+			} catch (Exception e) {
+				System.out.println("Exception:");
+				System.out.println(e.getClass());
 				hayError = true;
 			}
-		} while (hayError);
+		} while (hayError || (!aux.equals("s") && !aux.equals("n")));
+		if (aux.equals("s")) {
+			value = true;
+		}
 		return value;
 	}
 

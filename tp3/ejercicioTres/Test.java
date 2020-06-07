@@ -10,7 +10,6 @@ public class Test {
 		// TODO Auto-generated method stub
 		Casa garbarino = new Casa();
 		garbarino.crearProducto();
-		
 	}
 
 }
