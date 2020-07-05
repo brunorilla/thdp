@@ -1,4 +1,4 @@
-package segundoParcial;
+package guarderiaBarcos;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -20,7 +20,7 @@ public class Anillo implements Estacionamiento {
 	public boolean estacionar(Embarcacion e) {
 		// TODO Auto-generated method stub
 		boolean retorno = false;
-		if (lugaresLibres() < getCapacidad()) {
+		if (lugaresLibres() <= getCapacidad()) {
 			getCola_lanchas().add(e);
 			System.out.println("Lancha estacionada correctamente");
 		} else {

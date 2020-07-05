@@ -1,4 +1,4 @@
-package segundoParcial;
+package guarderiaBarcos;
 
 public class Test {
 
@@ -8,9 +8,6 @@ public class Test {
 
 	public static void main(String[] args) {
 		Guarderia barcos = new Guarderia();
-
-
-
 			Embarcacion e = new Embarcacion("jj");
 			System.out.println(barcos.estacionar(e));
 		

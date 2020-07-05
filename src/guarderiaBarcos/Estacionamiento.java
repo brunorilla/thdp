@@ -1,4 +1,4 @@
-package segundoParcial;
+package guarderiaBarcos;
 
 public interface Estacionamiento {
 	public boolean estacionar(Embarcacion e);

@@ -1,4 +1,4 @@
-package segundoParcial;
+package guarderiaBarcos;
 
 public class Embarcacion {
 	
